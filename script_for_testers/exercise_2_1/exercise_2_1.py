@@ -18,14 +18,14 @@ for row in timing_data[1:]:
 
     if not row[1] or not row[2]: # avoiding blank row datas
         continue
-        
+
     current_run_time = float(row[1])    
     average_run_time = float(row[2])
     diff_from_avg = average_run_time - current_run_time
     column_chart.append([test_name,diff_from_avg])
     table_data.append([test_name,float(current_run_time)])
 
-print(column_chart)
-print("---------------------------")
-print(table_data)
+# print(column_chart)
+# print("---------------------------")
+# print(table_data)
 
